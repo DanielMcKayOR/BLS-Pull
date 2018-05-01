@@ -12,8 +12,8 @@
             {id: "seriesID", alias: "seriesID", dataType: tableau.dataTypeEnum.string},
             {id: "year", alias: "Year", dataType: tableau.dataTypeEnum.int},
             {id: "period", alias: "Period", dataType: tableau.dataTypeEnum.string}, 
-            {id: "periodName", alias: "Month", dataType: tableau.dataTypeEnum.string},
-            {id: "value", alias: "value", dataType: tableau.dataTypeEnum.int}, 
+            {id: "periodName", alias: "periodName", dataType: tableau.dataTypeEnum.string},
+            {id: "value", alias: "value", dataType: tableau.dataTypeEnum.string}, 
             {id: "footnotes", alias: "footnotes", dataType: tableau.dataTypeEnum.string}            
         ];
 
@@ -65,7 +65,7 @@
                             "seriesID": obj.seriesID,
                             "year": obj.data[i].year,
                             "period": obj.data[i].period,
-                            "month": obj.data[i].periodName,
+                            "periodName": obj.data[i].periodName,
                             "fullDate": calcDate,
                             "value": obj.data[i].value,
                             "footnotes": obj.data[i].footnotes[0].text
